@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QtMath>
+#include <QString>
 
-bool isPrime(uint number);
-bool isPerfect(uint number);
+bool    isPrime   (const uint number);
+bool    isPerfect (const uint number);
+QString perfects  (const uint number);

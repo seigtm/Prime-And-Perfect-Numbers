@@ -1,6 +1,5 @@
 #pragma once
 
-#include "myMaths.h"
 #include "visualizationwindow.h"
 
 #include <QMainWindow>
@@ -24,8 +23,9 @@ private slots:
   void on_buttonPerfect_clicked();
 
 private:
-  void checkPerfect();
-  void checkPrime();
+  bool getNumberFromInputDialog(uint& number);
+  void checkOnePerfect();
+  void checkOnePrime();
 
   QStringList primeActions;
   QStringList perfectActions;
